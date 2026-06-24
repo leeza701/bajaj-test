@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bajaj-test-app
+    env: node
+    buildCommand: "./build.sh"
+    startCommand: "cd chitkara-bfhl && npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
