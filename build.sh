@@ -4,7 +4,7 @@ set -o errexit
 
 # Install and build frontend
 cd frontend
-npm install
+npm install --include=dev
 npm run build
 
 # Install backend dependencies
